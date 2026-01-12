@@ -1,0 +1,119 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: purple;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+
+}
+
+.mood-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+
+}
+
+.mood-btn {
+  padding: 15px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mood-btn:hover {
+  transform:translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.mood-btn[data-mood="Happy"] {
+  background: #FFEB3B;
+  color: #333;
+}
+
+.mood-btn[data-mood="Productive"] {
+  background: #4CAF50;
+  color: white;
+}
+
+.mood-btn[data-mood="Tired"] {
+  background: #9E9E9E;
+  color: white;
+}
+
+.mood-btn[data-mood="Excited"] {
+  background: #E91E63;
+  color: white;
+}
+
+.mood-btn[data-mood="Learning"] {
+  background: #2196F3;
+  color: white;
+}
+
+.mood-btn[data-mood="Hopeful"] {
+  background: pink;
+  color: white;
+}
+
+.result {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+}
+
+#moodDisplay {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 15px 0;
+  min-width: 50px;
+}
+
+
+#counter {
+  font-size: 18px;
+  color: #666;
+}
+
+#resetBtn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+} 
+
+#resetBtn:hover {
+  background: #ff3742;
+  transform: scale(1.05);
+}
